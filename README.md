@@ -1,4 +1,4 @@
-# 🚗 Car Rental API — Assignment 3  
+ Car Rental API — Assignment 3  
 ### Advanced OOP · JDBC · Exception Handling · Multi-layer Architecture
 
 This project is developed as part of **DBMS Assignment 3**.  
@@ -7,7 +7,7 @@ It demonstrates a complete **Java OOP API** with real **SQLite database**, full 
 
 ---
 
-# 📌 1. Project Overview
+ 1. Project Overview
 
 The **Car Rental API** simulates a simple rental system with customers, vehicles, and rental records.  
 The application is implemented in **pure Java (JDK 17)** using:
@@ -23,7 +23,7 @@ All interactions happen through a clean **CLI menu** (Command Line Interface).
 
 ---
 
-# 📦 2. Project Architecture
+ 2. Project Architecture
 
 ```
 controller/       → CLI controller (Main)
@@ -38,7 +38,7 @@ data/             → SQLite database (auto-created)
 
 ---
 
-# 🧬 3. OOP Design
+ 3. OOP Design
 
 ### ✔ Abstract Class  
 **`BaseEntity`**  
@@ -62,12 +62,12 @@ data/             → SQLite database (auto-created)
 - `getType()`  
 - `describe()`
 
-### ✔ Composition  
+ Composition  
 `Rental` **has-a** `Customer` + `VehicleBase`.
 
 ---
 
-# 🗄 4. Database
+ 4. Database
 
 The project uses **SQLite** (lightweight, file-based DB).  
 Database file is created automatically:
@@ -87,10 +87,9 @@ src/main/resources/schema.sql
 ```
 
 ---
+ 5. How To Run
 
-# ⚙️ 5. How To Run
-
-## ▶ A) IntelliJ IDEA  
+ A) IntelliJ IDEA  
 1. **File → Open** → select project folder  
 2. Ensure **JDK 17** is selected  
 3. Maven will auto-load dependencies  
@@ -99,7 +98,7 @@ src/main/resources/schema.sql
    aitu.controller.Main
    ```
 
-## ▶ B) Terminal (optional)
+ B) Terminal (optional)
 ```bash
 mvn clean package
 java -jar target/assignment3-car-rental-api-1.0.0.jar
@@ -107,7 +106,7 @@ java -jar target/assignment3-car-rental-api-1.0.0.jar
 
 ---
 
-# 🧪 6. Features Demonstrated
+ 6. Features Demonstrated
 
 ### ✔ CRUD Operations
 - Add / list / update / delete customers  
@@ -129,7 +128,7 @@ java -jar target/assignment3-car-rental-api-1.0.0.jar
 
 ---
 
-# 🖥 7. Menu Demo
+ 7. Menu Demo
 
 ```
 === Car Rental API (CLI demo) ===
@@ -144,7 +143,7 @@ java -jar target/assignment3-car-rental-api-1.0.0.jar
 
 
 
-# 💭 9. Reflection (example)
+ 9. Reflection (example)
 
 During this assignment, I learned how to combine **OOP principles** with a real **database layer**,  
 using JDBC safely through **prepared statements**.  
@@ -153,7 +152,7 @@ Implementing custom exceptions helped me design cleaner and more predictable err
 
 ---
 
-# ✅ 10. Conclusion
+ 10. Conclusion
 
 The Car Rental API fully satisfies all assignment requirements:  
 ✔ Abstract classes · ✔ Inheritance · ✔ Interfaces  
